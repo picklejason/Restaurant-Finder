@@ -28,13 +28,25 @@ const AddRestaurant = () => {
       <form action="">
         <div className="form-row">
           <div className="col">
-            <input value={name} onChange={(e) => setName(e.target.value)} type="text" className="form-control" placeholder="name"/>
+            <input
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+              type="text"
+              className="form-control"
+              placeholder="name"
+            />
           </div>
           <div className="col">
-            <input value={location} onChange={(e) => setLocation(e.target.value)} type="text" className="form-control" placeholder="location"/>
+            <input
+              value={location}
+              onChange={(e) => setLocation(e.target.value)}
+              type="text"
+              className="form-control"
+              placeholder="location"
+            />
           </div>
           <div className="col">
-            <select 
+            <select
               value={priceRange}
               onChange={(e) => setPriceRange(e.target.value)}
               className="custom-select my-1 mr-sm-2"
@@ -46,12 +58,13 @@ const AddRestaurant = () => {
               <option value="4">$$$$</option>
             </select>
           </div>
-          <button onClick={handleSubmit} className="btn btn-primary">Add</button>
+          <button onClick={handleSubmit} className="btn btn-primary">
+            Add
+          </button>
         </div>
       </form>
-
     </div>
-  )
-}
+  );
+};
 
-export default AddRestaurant
+export default AddRestaurant;
